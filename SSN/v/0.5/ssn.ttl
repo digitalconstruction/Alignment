@@ -30,7 +30,7 @@ ssn:Platform rdfs:subClassOf dice:MaterialEntity .
 dicp:Observation owl:equivalentClass sosa:Observation .
 dicp:Actuation owl:equivalentClass sosa:Actuation .
 
-sosa:observedProperty rdfs:subPropertyOf dicp:observedProperty .
+sosa:observedProperty rdfs:subPropertyOf dicp:hasObservedProperty .
 sosa:actsOnProperty rdfs:subPropertyOf dicp:actsOnProperty .
 sosa:hasResult owl:equivalentProperty dicp:hasObservedResult . 
 
