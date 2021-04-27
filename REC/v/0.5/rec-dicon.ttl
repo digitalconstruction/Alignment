@@ -1,0 +1,51 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dicc: <https://w3id.org/digitalconstruction/0.5/Contexts#> .
+@prefix dicv: <https://w3id.org/digitalconstruction/0.5/Variables#> .
+@prefix dice: <https://w3id.org/digitalconstruction/0.5/Entities#> .
+@prefix dicp: <https://w3id.org/digitalconstruction/0.5/Processes#> .
+@prefix dica: <https://w3id.org/digitalconstruction/0.5/Agents#> .
+@prefix dici: <https://w3id.org/digitalconstruction/0.5/Information#> .
+@prefix core: <https://w3id.org/rec/core/> .
+@prefix agents: <https://w3id.org/rec/agents/> . 
+@prefix building: <https://w3id.org/rec/building/> .
+@prefix device: <https://w3id.org/rec/device/> .
+@prefix actuator: <https://w3id.org/rec/actuator/> .
+@prefix actuation: <https://w3id.org/rec/actuation/> .
+@prefix lease: <https://w3id.org/rec/leaase/> .
+
+<https://w3id.org/digitalconstruction/0.5/Alignment/REC/rec-dicon.ttl> 
+  rdf:type owl:Ontology ;
+  dcterms:created "2021-04-18"^^xsd:date ;
+  dcterms:creator "Seppo Törmä" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  rdfs:comment "Alignment of the Digital Construction Ontologies with RealEstateCore ontologies" ;
+  rdfs:label "Alignment of DiCon and RealEstateCore"@en ;
+  owl:imports <https://w3id.org/digitalconstruction/0.5/Information/information.ttl> ;
+  owl:imports <https://w3id.org/rec/agents/>, <https://w3id.org/rec/building/> , <https://w3id.org/rec/actuation/> , <https://w3id.org/rec/lease/> .
+
+device:Actuation owl:equivalentClass dicp:Actuation .
+core:Agent owl:equivalentClass dica:Agent .
+core:Apartment rdfs:subClassOf dice:ResidentialUnit .
+core:Building owl:equivalentClass dice:Building .
+dice:BuildingObject rdfs:subClassOf core:BuildingComponent .
+dice:BuildingUnit rdfs:subClassOf core:BuildingComponent .
+core:Collection owl:equivalentClass dice:Group. 
+core:Device owl:equivalentClass dice:Device .
+agents:Group owl:equivalentClass dica:Team .
+core:Information rdfs:subClassOf dici:InformationContentEntity .
+core:MeasurementUnit owl:equivalentClass dicv:Unit .
+# core:Observation owl:equivalentClass dicp:Observation .
+agents:Organization owl:equivalentClass	dica:Organization .
+agents:Person owl:equivalentClass dica:Person .
+core:QuantityKind owl:equivalentClass dicv:QuantityKind .
+core:hasQuantityKind owl:equivalentProperty dicv:hasQuantityKind .
+core:RealEstate	owl:equivalentClass dice:RealEstate .
+core:Room rdfs:subClassOf dice:Location .
+core:Sensor owl:equivalentClass dice:Sensor .
+core:Service owl:equivalentClass dicp:Service .
+
+## Alignment of properties in progress
