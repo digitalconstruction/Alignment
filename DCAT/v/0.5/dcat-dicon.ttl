@@ -1,0 +1,34 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dicc: <https://w3id.org/digitalconstruction/0.5/Contexts#> .
+@prefix dicv: <https://w3id.org/digitalconstruction/0.5/Variables#> .
+@prefix dice: <https://w3id.org/digitalconstruction/0.5/Entities#> .
+@prefix dicp: <https://w3id.org/digitalconstruction/0.5/Processes#> .
+@prefix dica: <https://w3id.org/digitalconstruction/0.5/Agents#> .
+@prefix dici: <https://w3id.org/digitalconstruction/0.5/Information#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+
+<https://w3id.org/digitalconstruction/0.5/Alignment/DCAT/dcat-dicon.ttl> 
+  rdf:type owl:Ontology ;
+  dcterms:created "2021-04-28"^^xsd:date ;
+  dcterms:creator "Seppo Törmä" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  rdfs:comment "Alignment of the Digital Construction Ontologies with Data Catalog Vocabulary (DCAT) ontology" ;
+  rdfs:label "Alignment of DiCon and DCAT"@en ;
+  owl:imports <https://w3id.org/digitalconstruction/0.5/Information/information.ttl> ;
+  owl:imports <https://www.w3.org/ns/dcat.ttl> .
+
+
+dici:InformationContainer rdfs:subClassOf dcat:Dataset .
+dici:InformationModel rdfs:subClassOf dcat:Catalog .
+
+dici:includesContainer rdfs:subPropertyOf dcat:dataset .
+dici:includesModel rdfs:subPropertyOf dcat:catalog .
+
+dici:DataService owl:equivalentClass dcat:DataService .
+dici:serves owl:subPropertyOf dcat:servesDataset .
+
+
