@@ -26,5 +26,8 @@ dicp:Activity rdfs:subClassOf prov:Activity .
 dicv:Property rdfs:subClassOf prov:Entity .
 dici:InformationContentEntity rdfs:subClassOf prov:Entity .
 
+dici:isCreatedBy rdfs:subPropertyOf prov:wasAttributedTo .
+dici:isCreatedAt rdfs:subPropertyOf prov:generatedAtTime .
+
 dicv:Agent owl:equivalentClass prov:Agent .
 
