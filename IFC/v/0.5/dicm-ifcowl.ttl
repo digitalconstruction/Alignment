@@ -23,7 +23,7 @@ dicm:Material	owl:equivalentClass	ifc:IfcMaterial .
 dicm:MaterialObjectStructure	owl:equivalentClass	ifc:IfcMaterialDefinition .
 dicm:Layer	owl:equivalentClass	ifc:MaterialLayer .
 dicm:LayerSet	owl:equivalentClass	ifc:IfcMaterialLayerSet .
-dicm:hasLayer	owl:equivalentProperty	ifc:materialLayers_IfcMaterialLayerSet .
+# dicm:hasLayer	owl:equivalentProperty	ifc:materialLayers_IfcMaterialLayerSet .
 dicm:hasLayerSet	owl:equivalentProperty	ifc:forLayerSet_IfcMaterialLayerSetUsage .
 dicm:hasMaterial	owl:equivalentProperty	ifc:material_IfcMaterialLayer .
 

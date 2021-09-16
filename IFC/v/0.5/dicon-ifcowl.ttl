@@ -4,19 +4,19 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/digitalconstruction/0.5/Alignment/dicc/dicon-ifcowl.ttl>
+<https://w3id.org/digitalconstruction/0.5/Alignment/IFC/dicon-ifcowl.ttl>
   rdf:type owl:Ontology ;
   dcterms:created "2021-09-16"^^xsd:date ;
   dcterms:creator "Seppo Törmä" ;
   dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
   rdfs:comment "Alignment of the Digital Construction ontologies with ifcowl ontology" ;
   rdfs:label "Alignment of DiCon and ifcowl"@en ;
-  owl:imports <https://w3id.org/digitalconstruction/0.5/Alignment/dicc-ifcowl.ttl> ,
-  	      <https://w3id.org/digitalconstruction/0.5/Alignment/dicv-ifcowl.ttl> ,	   
-  	      <https://w3id.org/digitalconstruction/0.5/Alignment/dice-ifcowl.ttl> ,	   
-  	      <https://w3id.org/digitalconstruction/0.5/Alignment/dicp-ifcowl.ttl> ,	   
-  	      <https://w3id.org/digitalconstruction/0.5/Alignment/dica-ifcowl.ttl> ,	   
-  	      <https://w3id.org/digitalconstruction/0.5/Alignment/dici-ifcowl.ttl> ,	   
-  	      <https://w3id.org/digitalconstruction/0.5/Alignment/dicm-ifcowl.ttl> ,	   
-  	      <https://w3id.org/digitalconstruction/0.5/Alignment/dicob-ifcowl.ttl> ,	   
-  	      <https://w3id.org/digitalconstruction/0.5/Alignment/dices-ifcowl.ttl> ;	   
+  owl:imports <https://w3id.org/digitalconstruction/0.5/Alignment/IFC/dicc-ifcowl.ttl> ,
+  	      <https://w3id.org/digitalconstruction/0.5/Alignment/IFC/dicv-ifcowl.ttl> ,	   
+  	      <https://w3id.org/digitalconstruction/0.5/Alignment/IFC/dice-ifcowl.ttl> ,	   
+  	      <https://w3id.org/digitalconstruction/0.5/Alignment/IFC/dicp-ifcowl.ttl> ,	   
+  	      <https://w3id.org/digitalconstruction/0.5/Alignment/IFC/dica-ifcowl.ttl> ,	   
+  	      <https://w3id.org/digitalconstruction/0.5/Alignment/IFC/dici-ifcowl.ttl> ,	   
+  	      <https://w3id.org/digitalconstruction/0.5/Alignment/IFC/dicm-ifcowl.ttl> ,	   
+  	      <https://w3id.org/digitalconstruction/0.5/Alignment/IFC/dicob-ifcowl.ttl> ,	   
+  	      <https://w3id.org/digitalconstruction/0.5/Alignment/IFC/dices-ifcowl.ttl> .	   
