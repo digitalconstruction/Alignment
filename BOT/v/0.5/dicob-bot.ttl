@@ -1,0 +1,24 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dicob: <https://w3id.org/digitalconstruction/0.5/Occupancy#> .
+@prefix bot: <https://w3id.org/bot#> .
+
+
+<https://w3id.org/digitalconstruction/0.5/Alignment/dicob/dicob-bot.ttl>
+  rdf:type owl:Ontology ;
+  dcterms:created "2021-06-30"^^xsd:date ;
+  dcterms:creator "Seppo Törma" ;
+  dcterms:creator "Prathap Valluru" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  rdfs:comment "Alignment of the Digital Construction Occupancy ontology with the Building Topology Ontology" ;
+  rdfs:label "Alignment of DICOB and bot"@en ;
+  owl:imports <https://digitalconstruction.github.io/Occupancy/v/0.5/occupancy.ttl> ;
+  owl:imports <https://w3c-lbd-cg.github.io/bot/bot.ttl> .
+
+
+dicob:Floor	rdfs:subClassOf	bot:Element .
+dicob:Wall	rdfs:subClassOf	bot:Element .
+dicob:Door	rdfs:subClassOf	bot:Element .

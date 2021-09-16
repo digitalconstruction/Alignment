@@ -1,0 +1,23 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dici: <https://w3id.org/digitalconstruction/0.5/Information#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+
+
+<https://w3id.org/digitalconstruction/0.5/Alignment/dici/dici-dcat.ttl>
+  rdf:type owl:Ontology ;
+  dcterms:created "2021-06-30"^^xsd:date ;
+  dcterms:creator "Seppo Törma" ;
+  dcterms:creator "Prathap Valluru" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  rdfs:comment "Alignment of the Digital Construction Information ontology with Data Catalog Vocabulary ontology" ;
+  rdfs:label "Alignment of DICI and DCAT"@en ;
+  owl:imports <https://digitalconstruction.github.io/Information/v/0.5/information.ttl> ;
+  owl:imports <https://www.w3.org/ns/dcat.ttl> .
+
+
+dici:informationModel	rdfs:subClassOf 	dcat:Catalog .
+dici:DataSet	rdfs:subClassOf	dcat:DataSet .

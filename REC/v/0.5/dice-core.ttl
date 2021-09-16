@@ -1,0 +1,29 @@
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dice: <https://w3id.org/digitalconstruction/0.5/Entities#> .
+@prefix core: <https://w3id.org/rec/core/> .
+
+<https://w3id.org/digitalconstruction/0.5/Alignment/dice/dice-core.ttl>
+  rdf:type owl:Ontology ;
+  dcterms:created "2021-06-30"^^xsd:date ;
+  dcterms:creator "Seppo Törma" ;
+  dcterms:creator "Prathap Valluru" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  rdfs:comment "Alignment of the Digital Construction Entities ontology with the Real Estate Core ontology" ;
+  rdfs:label "Alignment of DICE and core"@en ;
+  owl:imports <https://digitalconstruction.github.io/Entities/v/0.5/entities.ttl> ;
+  owl:imports <https://doc.realestatecore.io/3.2/core.rdf> .
+
+core:Apartment 	rdfs:subClassOf 	dice:ResidentialUnit .
+core:Building 	owl:equivalentClass 	dice:Building .
+dice:BuildingObject 	rdfs:subClassOf 	core:BuildingComponent .
+dice:BuildingUnit 	rdfs:subClassOf 	core:BuildingComponent .
+core:Collection 	owl:equivalentClass 	dice:Group .
+core:Device 	owl:equivalentClass 	dice:Device .
+core:RealEstate		owl:equivalentClass 	dice:RealEstate .
+core:Room 	rdfs:subClassOf 	dice:Location .
+core:Sensor 	owl:equivalentClass 	dice:Sensor .

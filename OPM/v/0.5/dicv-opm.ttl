@@ -1,0 +1,22 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dicv: <https://w3id.org/digitalconstruction/0.5/Variables#> .
+@prefix opm: <https://w3id.org/opm#> .
+
+<https://w3id.org/digitalconstruction/0.5/Alignment/dicv/dicv-opm.ttl>
+  rdf:type owl:Ontology ;
+  dcterms:created "2021-06-30"^^xsd:date ;
+  dcterms:creator "Seppo Törma" ;
+  dcterms:creator "Prathap Valluru" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  rdfs:comment "Alignment of the Digital Construction Variables ontology with Ontology for Property Management" ;
+  rdfs:label "Alignment of DICV and OPM"@en ;
+  owl:imports <https://digitalconstruction.github.io/Variables/v/0.5/variables.ttl> ;
+  owl:imports <https://w3c-lbd-cg.github.io/opm/opm.ttl> .
+
+dicv:PropertyState 	owl:equivalentClass 	opm:PropertyState .
+dicv:Property 	owl:equivalentClass 	opm:Property .
+dicv:hasPropertyState 	owl:equivalentProperty 	opm:hasPropertyState .

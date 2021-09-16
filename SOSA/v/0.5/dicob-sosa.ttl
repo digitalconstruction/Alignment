@@ -1,0 +1,25 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dicob: <https://w3id.org/digitalconstruction/0.5/Occupancy#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+
+
+<https://w3id.org/digitalconstruction/0.5/Alignment/dicob/dicob-sosa.ttl>
+  rdf:type owl:Ontology ;
+  dcterms:created "2021-06-30"^^xsd:date ;
+  dcterms:creator "Seppo Törma" ;
+  dcterms:creator "Prathap Valluru" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  rdfs:comment "Alignment of the Digital Construction Occupancy ontology with Sensor, Observation, Sample, and Actuator ontology" ;
+  rdfs:label "Alignment of DICOB and sosa"@en ;
+  owl:imports <https://digitalconstruction.github.io/Occupancy/v/0.5/occupancy.ttl> ;
+   owl:imports <https://www.w3.org/ns/sosa/> .
+
+dicob:AirQualitySensor	rdfs:subClassOf 	sosa:Sensor .
+dicob:HumiditySensor	rdfs:subClassOf 	sosa:Sensor .
+dicob:LuminanceSensor	rdfs:subClassOf 	sosa:Sensor .
+dicob:NoiseSensor	rdfs:subClassOf 	    sosa:Sensor .
+dicob:TemperatureSensor	rdfs:subClassOf 	sosa:Sensor .

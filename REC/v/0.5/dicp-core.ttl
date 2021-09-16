@@ -1,0 +1,24 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dicp: <https://w3id.org/digitalconstruction/0.5/Processes#> .
+@prefix device: <https://w3id.org/rec/device/> .
+@prefix core: <https://w3id.org/rec/core/> .
+
+<https://w3id.org/digitalconstruction/0.5/Alignment/dicp/dicp-core.ttl>
+  rdf:type owl:Ontology ;
+  dcterms:created "2021-06-30"^^xsd:date ;
+  dcterms:creator "Seppo Törma" ;
+  dcterms:creator "Prathap Valluru" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  rdfs:comment "Alignment of the Digital Construction Processes ontology with Real Estate Core ontology" ;
+  rdfs:label "Alignment of DICP and core"@en ;
+  owl:imports <https://digitalconstruction.github.io/Processes/v/0.5/processes.ttl> ;
+  owl:imports <https://doc.realestatecore.io/3.2/core.rdf> ;
+  owl:imports <https://doc.realestatecore.io/3.2/device.rdf> .
+
+device:Actuation 	owl:equivalentClass 	dicp:Actuation .
+core:Observation 	owl:equivalentClass 	dicp:Observation .
+core:Service 	owl:equivalentClass 	dicp:Service .

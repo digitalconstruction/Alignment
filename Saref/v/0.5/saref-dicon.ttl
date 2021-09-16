@@ -11,7 +11,7 @@
 @prefix saref: <https://saref.etsi.org/core/> .
 @prefix s4bldg: <https://saref.etsi.org/saref4bldg/> .
 
-<https://w3id.org/digitalconstruction/0.5/Alignment/Saref/saref.ttl>
+<https://w3id.org/digitalconstruction/0.5/Alignment/Saref/saref-dicon.ttl>
   rdf:type owl:Ontology ;
   dcterms:created "2021-04-18"^^xsd:date ;
   dcterms:creator "Seppo Törmä" ;

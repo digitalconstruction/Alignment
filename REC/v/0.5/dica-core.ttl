@@ -1,0 +1,27 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dica: <https://w3id.org/digitalconstruction/0.5/Agents#> .
+@prefix core: <https://w3id.org/rec/core/> .
+@prefix agents: <https://w3id.org/rec/agents/> .
+
+
+
+<https://w3id.org/digitalconstruction/0.5/Alignment/dica/dica-core.ttl>
+  rdf:type owl:Ontology ;
+  dcterms:created "2021-06-30"^^xsd:date ;
+  dcterms:creator "Seppo Törma" ;
+  dcterms:creator "Prathap Valluru" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  rdfs:comment "Alignment of the Digital Construction Agents ontology with Real Estate Core ontology" ;
+  rdfs:label "Alignment of DICA and CORE"@en ;
+  owl:imports <https://digitalconstruction.github.io/Agents/v/0.5/agents.ttl> ;
+  owl:imports <https://doc.realestatecore.io/3.2/core.rdf> ;
+  owl:imports <https://doc.realestatecore.io/3.2/agents.rdf> .
+
+core:Agent 	owl:equivalentClass 	dica:Agent .
+agents:Group 	owl:equivalentClass 	dica:Team .
+agents:Organization 	owl:equivalentClass	dica:Organization .
+agents:Person 	owl:equivalentClass 	dica:Person .

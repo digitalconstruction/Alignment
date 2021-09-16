@@ -21,5 +21,6 @@ bot:Building owl:equivalentClass dice:Building .
 bot:containsZone owl:equivalentProperty dice:hasSubLocation .
 bot:Element owl:equivalentClass dice:BuildingObject .
 bot:hasELement owl:equivalentProperty dice:isLocationOf .
-bot:hasSubElement rdfs:subPropertyOf dice:hasContinuantPartAtAllTimes .
+bot:hasSubElement rdfs:subPropertyOf dice:hasContinuantPart .
+bot:adjacentElement rdfs:subPropertyOf dice:hasAdjacentElement .
 
