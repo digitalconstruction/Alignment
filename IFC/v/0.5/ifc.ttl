@@ -46,7 +46,7 @@ ifc:IfcConstructionMaterialResource rdfs:subClassOf dice:MaterialBatch .
 
 
 ifc:IfcProject rdfs:subClassOf dicp:Project .
-ifc:IfcProcess rdfs:subClassOf dicc:Process .
+ifc:IfcProcess rdfs:subClassOf dicp:Process .
 ifc:IfcTask rdfs:subClassOf dice:Activity .
 
 ifc:IfcContext rdfs:subClassOf dicc:Context .
@@ -74,5 +74,16 @@ ifc:IfcWorkSchedule rdfs:subClassOf dici:Plan .
 #
 # PropertyChainAxioms over objectified relations?
 #
+
+[ a owl:ObjectProperty ;
+  owl:propertyChainAxiom (ifc:isTypedBy_IfcObject
+                          ifc:relatingType_IfcRelDefinesByType 
+                          ifc:hasAssignments_IfcObjectDefinition         
+                          ifc:relatingProduct_IfcRelAssignsToProduct ) ] rdfs:subPropertyOf dice:isAssignedToType . 
+[ a owl:ObjectProperty ;
+  owl:propertyChainAxiom (ifc:hasAssignments_IfcObjectDefinition         
+                          ifc:relatingProduct_IfcRelAssignsToProduct ) ] rdfs:subPropertyOf dice:isAssignedToInstance . 
+ifc:IfcProxy rdfs:subClassOf dice:Category .
+ifc:tag_IfcProxy rdfs:subPropertyOf dice:hasLabel .
 
 
