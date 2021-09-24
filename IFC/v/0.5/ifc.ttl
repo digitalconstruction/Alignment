@@ -61,19 +61,7 @@ ifc:IfcObjective rdfs:subClassOf dici:Goal .
 ifc:IfcWorkPlan rdfs:subClassOf dici:Plan .
 ifc:IfcWorkSchedule rdfs:subClassOf dici:Plan .
 
-# To consider:
-#   IfcClassification
-#   IfcConstraint
-#   IfcCostItem
-#   IfcMaterial
-#   IfcMaterialLayer
-#   IfcMaterialLayerSet
-#   IfcMetric
-#   IfcProperty
-#   IfcSystem
-#
-# PropertyChainAxioms over objectified relations?
-#
+# PropertyChainAxioms 
 
 [ a owl:ObjectProperty ;
   owl:propertyChainAxiom (ifc:isTypedBy_IfcObject
@@ -86,4 +74,14 @@ ifc:IfcWorkSchedule rdfs:subClassOf dici:Plan .
 ifc:IfcProxy rdfs:subClassOf dice:Category .
 ifc:tag_IfcProxy rdfs:subPropertyOf dice:hasLabel .
 
+# To consider:
+#   IfcClassification
+#   IfcConstraint
+#   IfcCostItem
+#   IfcMaterial
+#   IfcMaterialLayer
+#   IfcMaterialLayerSet
+#   IfcMetric
+#   IfcProperty
+#   IfcSystem
 
