@@ -13,7 +13,7 @@
   dcterms:created "2021-05-03"^^xsd:date ;
   dcterms:creator "Seppo Törmä" ;
   dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  rdfs:comment "Alignment of the Digital Construction Agents ontology with FIBO ontology" ;
+  rdfs:comment "Alignment of the Digital Construction Agents with FIBO ontology" ;
   rdfs:label "Alignment of DICA and FIBO"@en ;
   owl:imports <https://w3id.org/digitalconstruction/0.5/Agents/agents.ttl> ;
   owl:imports <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/> ;
