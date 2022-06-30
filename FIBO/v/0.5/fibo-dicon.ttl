@@ -1,0 +1,26 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sp: <http://www.w3.org/ns/sosa/prov/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dica: <https://w3id.org/digitalconstruction/0.5/Agents#> .
+@prefix fibo-lp: <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/> .
+@prefix fibo-cb: <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/Corporation> .
+
+<https://w3id.org/digitalconstruction/0.5/Alignment/QUDT/fibo-dicon.ttl>
+  rdf:type owl:Ontology ;
+  dcterms:created "2021-05-03"^^xsd:date ;
+  dcterms:creator "Seppo Törmä" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  rdfs:comment "Alignment of the Digital Construction Agents ontology with FIBO ontology" ;
+  rdfs:label "Alignment of DICA and FIBO"@en ;
+  owl:imports <https://w3id.org/digitalconstruction/0.5/Agents/agents.ttl> ;
+  owl:imports <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/> ;
+  owl:imports <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/Corporation> .
+
+dica:LegalPerson owl:equivalentClass fibo-lp:LegalPerson .
+dica:LegalEntity owl:equivalentClass fibo-lp:LegalEntity .
+dica:LegallyCompetentNaturalPerson owl:equivalentClass fibo-lp:LegallyCompetentNaturalPerson .
+dica:Corporation owl:equivalentClass fibo-cb:Corporation .
+
